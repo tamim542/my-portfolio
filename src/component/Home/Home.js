@@ -314,7 +314,7 @@ const Home = () => {
             {/* ------------contact form---------------- */}
 
             <div className='contact-div'>
-            <h2 style={{color:'white',fontWeight:'bolder',fontSize: '55px',textAlign:'center',paddingTop:'40px'}}>My Skills</h2>
+            <h2 style={{color:'white',fontWeight:'bolder',fontSize: '55px',textAlign:'center',paddingTop:'40px'}}>Contact With Me</h2>
                 <section id='contact' className='contact-form'>
                     <form>
                     <div class="mb-3">
