@@ -1,0 +1,227 @@
+
+.nav-bar{
+    background-color: #f9004d;
+   
+}
+.nav-side{
+    margin-left: 150px;
+margin-right: 150px;
+}
+.bgColor{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+.content{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.resume-style{
+    text-decoration: none;
+    background-color: #f9004d;
+   
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.pasport-img{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.img-radius{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+
+}
+
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 55px;
+    font-weight: bolder;
+}
+.last-name{
+    color: hsla(0, 100%, 53%, 0.932);
+    font-weight: bolder;
+}
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h4{
+	color: #fcfc;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+/*---------------------------------------------
+        about
+----------------------------------------------*/
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+}
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.informal-img{
+    border-radius: 3px;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+
+/*---------------------------------------------
+        project
+----------------------------------------------*/
+.projects{
+	background: #101010;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 55px;
+    font-weight: bolder;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.button{
+	background-color:#f9004d;
+	color: white;
+	
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	
+}
+
+
+/* --------------------------------------
+         contact form
+--------------------------------------- */
+.contact-div{
+    background-color: rgb(0, 0, 0);
+}
+.contact-form{
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 10px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+
+/* ----------------------------------
+             Footer
+-------------------------------------*/
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px; 
+}
