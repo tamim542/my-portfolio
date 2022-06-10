@@ -8,10 +8,16 @@ import project2 from '../image/project2.PNG';
 import project3 from '../image/project3.PNG';
 import project4 from '../image/project4.PNG';
 import project5 from '../image/project5.PNG';
-import resume from '../image/MdTauhidulIslamBhuiyan.pdf';
+
+
+
+
+import { GoMarkGithub } from "react-icons/go";
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+//import pro1 from '../ProjectsDetail/Project1/Project1';
+
 import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Home = () => {
     return (
@@ -31,6 +37,7 @@ const Home = () => {
                             <div className="navbar-nav">
                                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                                 <a className="nav-link" href="#about-section">About</a>
+                                <a className="nav-link" href="#skills">Skills</a>
                                 <a className="nav-link" href="#project">Projects</a>
                                 <a className="nav-link" href="#resume">Resume</a>
                                 <a className="nav-link" href="#contact">Contact</a>
@@ -44,18 +51,18 @@ const Home = () => {
 
             {/* -------------------!content section--------------- */}
             <div className="bgColor">
-                <div className="content">
+                <div className="content" id='a-img'>
                     <h4>Hello, my name is</h4>
                     <h1>Md. Tauhidul Islam <span className='last-name'>Bhuiyan</span></h1>
                     <h3 style={{ marginBottom: '20px' }}>I'am a Web Developer.</h3>
 
                     {/* ---------------resume section--------------- */}
 
-                    <a className='resume-style' href={resume} download="MdTauhidulIslamBhuiyan.pdf"> Download Resume </a><br></br>
+                    <a className='resume-style' href='https://drive.google.com/file/d/1wHZfCBQy2bh2dBvplvqZ5hWbpijg07Cj/view?usp=sharing' download target='_blank'> Download Resume </a><br></br>
                     {/* <Link to="../image/MdTauhidulIslamBhuiyan.pdf" target="_blank" download>Download</Link> */}
 
                 </div>
-                <div className="pasport-img">
+                <div className="pasport-img" id='b-img'>
                     <img className='img-radius' src={pasport}></img>
                 </div>
             </div>
@@ -75,12 +82,105 @@ const Home = () => {
                 </div>
             </section>
 
+            {/*-------- ----skill section start---------- */}
+
+           
+                        
+                   
+   
+            <div className='skill-section' id='skills'>
+            <h2 style={{color:'white',fontWeight:'bolder',fontSize: '55px',textAlign:'center',paddingTop:'40px'}}>My Skills</h2>
+                <div className='margin-card'>
+            <div class="img-border" >
+            <h2 style={{color:'white',fontWeight:'bolder',fontSize: '35px',textAlign:'center',paddingTop:'3px'}}>Front-End</h2>
+               <div style={{paddingLeft:'60px'}}>
+                <div className='inner-card'>
+
+                <p className='skill-name'>HTML</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>CSS</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>Bootstrap</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>React-Bootstrap</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>Tailwind</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>JavaScript</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>React.js</p>
+                </div>
+                </div>
+               
+            </div>
+            <div class="img-border" >
+                
+            <h2 style={{color:'white',fontWeight:'bolder',fontSize: '35px',textAlign:'center',paddingTop:'3px'}}>Backend</h2>
+            <div style={{paddingLeft:'60px'}}>
+                <div className='inner-card'>
+
+                <p className='skill-name'>Node.js</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>Express.js</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>MongoDB</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>MySql</p>
+                </div>
+                </div>
+            </div>
+            <div class="img-border" >
+                
+            <h2 style={{color:'white',fontWeight:'bolder',fontSize: '35px',textAlign:'center',paddingTop:'3px'}}>Tools</h2>
+            <div style={{paddingLeft:'60px'}}>
+                <div className='inner-card'>
+
+                <p className='skill-name'>Visual Stdio Code</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>Github</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>Firebase</p>
+                </div>
+                <div className='inner-card'>
+
+                <p className='skill-name'>Heroku</p>
+                </div>
+               </div>
+                </div>
+            </div>
+            
+            </div>
+          
+           
+            {/*-------- ----skill section end---------- */}
 
             {/* -----my project section ----------- */}
             <section id='project'>
                 <div class="projects">
                     <div class="title">
-                        <h2>My Projects</h2>
+                    <h2 style={{color:'white',fontWeight:'bolder',fontSize: '55px',textAlign:'center',paddingTop:'40px',paddingBottom:'40px'}}>My Projects</h2>
                     </div>
 
                     {/* ---------------project card--------------- */}
@@ -214,9 +314,14 @@ const Home = () => {
             {/* ------------contact form---------------- */}
 
             <div className='contact-div'>
+            <h2 style={{color:'white',fontWeight:'bolder',fontSize: '55px',textAlign:'center',paddingTop:'40px'}}>My Skills</h2>
                 <section id='contact' className='contact-form'>
                     <form>
                     <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"><span style={{ color: 'white' }}>Name </span></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Write Your Name" />
+                        </div>
+                        <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label"><span style={{ color: 'white' }}>Email address</span></label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
                     </div>
@@ -235,12 +340,13 @@ const Home = () => {
 		<p>Md. Tauhidul Islam Bhuiyan</p>
 		<p>Get For more Information Click Social Icon:</p>
 		<div class="social">
-			<a href="#"></a>
-			<a href="#"></a>
-			<a href="#"></a>
+			<a href="https://github.com/tamim542" target='_blank'><GoMarkGithub/></a>
+			<a href="https://www.linkedin.com/in/md-tauhidul-islam-bhuiyan-828524221/" target='_blank'><FaLinkedin/></a>
+			<a href="https://www.facebook.com/profile.php?id=100005169857774" target='_blank'><FaFacebookSquare/></a>
 		</div>
 		<p class="end">CopyRight By Md. Tauhidul Islam Bhuiyan</p>
 	</footer>
+
 
 
         </div>
